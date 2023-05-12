@@ -93,7 +93,7 @@ exports.signin = async (req, res) => {
 
     res.cookie("refreshtoken", refreshToken, {
       httpOnly: true,
-    });;
+    });
 
     return res.cookie("accesstoken", accessToken).status(200).json({
       type: "success",
